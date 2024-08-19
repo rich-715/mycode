@@ -1,0 +1,7 @@
+---
+# tasks/redhat.yml
+# tasks only to be run on RedHat
+- name: Perform an operation on a RedHat EL platform
+  ansible.builtin.debug:
+    msg: This task will only run on a RedHat platform
+
