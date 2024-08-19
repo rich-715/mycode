@@ -1,0 +1,7 @@
+---
+# tasks/prechecks_windows.yaml
+# tasks only to be run on windows
+- name: precheck - assert distribution is correct
+  ansible.builtin.assert:
+    that: ansible_distribution_major_version == "10"
+

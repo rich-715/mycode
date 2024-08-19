@@ -27,11 +27,15 @@
       - name: Tasks specific to CentOS
         ansible.builtin.import_tasks: tasks/centos.yaml
         when: ansible_facts['distribution'] == "CentOS"
+      
+      - name: perform PRECHECKs on Windows (CHALLENGE 02 SOLUTION)
+        ansible.builtin.import_tasks: tasks/prechecks_windows.yaml
+        when: ansible_facts['os_family'] == "Windows"
 
       - name: Tasks specific to Windows
         ansible.builtin.import_tasks: tasks/windows.yaml
         when: ansible_facts['os_family'] == "Windows"
 
       - name: Task specific to RedHat
-        ansible.builtin.import_tasks: tasks/redhat.yaml
+        ansible.builtin.import_tasks: tasks/redhat.yml
         when: ansible_facts['os_family'] == "RedHat"
