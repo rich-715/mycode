@@ -1,10 +1,14 @@
 ---
-- hosts: localhost
+- name: Using script module
+  hosts: localhost
+  connection: local
   gather_facts: no
 
   tasks:
     - name: execute a python script as ansible task
-      script: GetSetPowerStateREDFISH.py
+      script: GetSetPowerStateREDFISH.py -ip 10.0.0.89 -u root -p r0gerwilc0 --get
+      args:
+        executable: python3
       register: results
     
     - debug:
