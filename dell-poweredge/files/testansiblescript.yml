@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: execute a python script as ansible task
+      script: GetSetPowerStateREDFISH.py
+      register: results
+    
+    - debug:
+        var: results
