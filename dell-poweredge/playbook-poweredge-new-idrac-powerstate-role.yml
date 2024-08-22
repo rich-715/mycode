@@ -1,0 +1,8 @@
+---
+  name: Power on Dell server
+  hosts: idrac
+  connection: local
+  gather_facts: no
+    
+  roles:
+    - ~/powercycle

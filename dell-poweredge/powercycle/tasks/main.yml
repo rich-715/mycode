@@ -1,2 +1,16 @@
 ---
 # tasks file for powercycle
+- name: Power on the server
+     dellemc.openmanage.redfish_powerstate:
+       baseuri: "{{ idrac_ip }}"
+       username: "root"
+       password: "r0gerwilc0"
+          #username: "{{ idrack_user }}"
+          #password: "{{ idrac_password }}"
+       validate_certs: False
+       reset_type: "On"
+     register: results
+
+- name: Show results
+      debug:
+        var: results
