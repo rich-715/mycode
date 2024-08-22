@@ -1,0 +1,7 @@
+---
+roles:
+  - name: idrac_lifecycle_controller_status
+    src: git+https://github.com/dell/redfish-ansible-module.git
+    version: a0148b940ca7270e15440069a18bff91ecdd8931
+    path: roles/idrac_lifecycle_controller_status
+
