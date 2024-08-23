@@ -1,0 +1,33 @@
+---
+- name: Learning to Use Ansible for Windows automation
+  hosts: server2022        # name of the group we want to run against
+  #connection: winrm   # we already mapped this in our inventory
+  gather_facts: yes
+
+  tasks:
+          # Create a text file with a single line inside
+          - name: Issuing a single line PowerShell command
+            ansible.windows.win_shell: Set-Content -Path C:\test.txt -Value 'Hello there. '
+
+          # create a text file with multiple lines inside
+          - name: Run a multi-lined shell command
+            ansible.windows.win_shell: |
+                    $text = Get-Content C:\test.txt
+                    $text += ' General Kenobi... you ARE a bold one...'
+                    Set-Content -Path C:\test2.txt -Value $text
+                    
+          # move the file from the controller to the remote Windows host
+          - name: Copy a single file
+            ansible.windows.win_copy:
+                    src: moveme.ps1         # this file must be present on the controller
+                    dest: C:\moveme.ps1
+          - name: Download Google Chrome installer
+            ansible.windows.win_get_url:
+              url: "https://dl.google.com/chrome/install/latest/chrome_installer.exe"
+              dest: "C:/temp/chrome_installer.exe"
+
+          - name: Install Google Chrome
+            ansible.windows.win_package:
+              path: "C:/temp/chrome_installer.exe"
+              state: present
+              arguments: "/silent /install" 

@@ -1,0 +1,254 @@
+AllJoyn Router Service
+
+Application Layer Gateway Service
+
+Application Identity
+
+Application Information
+
+Application Management
+
+App Readiness
+
+Microsoft App-V Client
+
+AppX Deployment Service (AppXSVC)
+
+Windows Audio Endpoint Builder
+
+Windows Audio
+
+ActiveX Installer (AxInstSV)
+
+Base Filtering Engine
+
+Background Intelligent Transfer Service
+
+Background Tasks Infrastructure Service
+
+Bluetooth Support Service
+
+Capability Access Manager Service
+
+CaptureService_203c89
+
+Clipboard User Service_203c89
+
+Connected Devices Platform Service
+
+Connected Devices Platform User Service_203c89
+
+Certificate Propagation
+
+Client License Service (ClipSVC)
+
+COM+ System Application
+
+ConsentUX User Service_203c89
+
+CoreMessaging
+
+CredentialEnrollmentManagerUserSvc_203c89
+
+Cryptographic Services
+
+Offline Files
+
+DCOM Server Process Launcher
+
+Declared Configuration(DC) service
+
+Optimize drives
+
+DeviceAssociationBroker_203c89
+
+Device Association Service
+
+Device Install Service
+
+DevicePicker_203c89
+
+DevicesFlow_203c89
+
+DevQuery Background Discovery Broker
+
+DHCP Client
+
+Microsoft (R) Diagnostics Hub Standard Collector Service
+
+Connected User Experiences and Telemetry
+
+Display Policy Service
+
+Device Management Enrollment Service
+
+Device Management Wireless Application Protocol (WAP) Push message Routing Service
+
+DNS Client
+
+Delivery Optimization
+
+Wired AutoConfig
+
+Diagnostic Policy Service
+
+Device Setup Manager
+
+Data Sharing Service
+
+Extensible Authentication Protocol
+
+Microsoft Edge Update Service (edgeupdate)
+
+Microsoft Edge Update Service (edgeupdatem)
+
+Encrypting File System (EFS)
+
+Embedded Mode
+
+Enterprise App Management Service
+
+Windows Event Log
+
+COM+ Event System
+
+Function Discovery Provider Host
+
+Function Discovery Resource Publication
+
+Windows Font Cache Service
+
+Windows Camera Frame Server
+
+Windows Camera Frame Server Monitor
+
+Group Policy Client
+
+GraphicsPerfSvc
+
+Human Interface Device Service
+
+HV Host Service
+
+IKE and AuthIP IPsec Keying Modules
+
+Microsoft Store Install Service
+
+IP Helper
+
+CNG Key Isolation
+
+KDC Proxy Server service (KPS)
+
+KtmRm for Distributed Transaction Coordinator
+
+Server
+
+Workstation
+
+Geolocation Service
+
+Windows License Manager Service
+
+Link-Layer Topology Discovery Mapper
+
+TCP/IP NetBIOS Helper
+
+Local Session Manager
+
+Downloaded Maps Manager
+
+McpManagementService
+
+Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)
+
+Windows Defender Firewall
+
+Distributed Transaction Coordinator
+
+Microsoft iSCSI Initiator Service
+
+Windows Installer
+
+Network Connectivity Assistant
+
+Network Connection Broker
+
+Netlogon
+
+Network Connections
+
+Network List Service
+
+Network Setup Service
+
+Net.Tcp Port Sharing Service
+
+Microsoft Passport Container
+
+Microsoft Passport
+
+Network Location Awareness
+
+Network Store Interface Service
+
+Program Compatibility Assistant Service
+
+Performance Counter DLL Host
+
+Contact Data_203c89
+
+Performance Logs & Alerts
+
+Plug and Play
+
+IPsec Policy Agent
+
+Power
+
+Printer Extensions and Notifications
+
+PrintWorkflow_203c89
+
+User Profile Service
+
+Windows PushToInstall Service
+
+Quality Windows Audio Video Experience
+
+Remote Access Auto Connection Manager
+
+Remote Access Connection Manager
+
+Routing and Remote Access
+
+Remote Registry
+
+Radio Management Service
+
+RPC Endpoint Mapper
+
+Remote Procedure Call (RPC) Locator
+
+Remote Procedure Call (RPC)
+
+Resultant Set of Policy Provider
+
+Special Administration Console Helper
+
+Security Accounts Manager
+
+Smart Card
+
+Smart Card Device Enumeration Service
+
+Task Scheduler
+
+Smart Card Removal Policy
+
+Secondary Logon
+
+Windows Security Service
+
+Payments and NFC/SE Manager
+

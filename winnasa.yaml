@@ -1,0 +1,19 @@
+---
+- name: Learning to target windows machines
+  hosts: server2022
+  gather_facts: yes # gather_facts works against windows machines
+
+  vars_prompt:
+          - name: ansible_ssh_pass
+            prompt: What is the password to log into this windows machine?
+            private: yes
+
+  vars:
+          pokepic: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png
+
+  tasks:
+          - name: Get some cool background graphics
+            ansible.windows.win_get_url:
+                    url: "{{ pokepic }}"
+                    dest: "C:\\Users\\{{ ansible_user }}\\Downloads\\pikachu.jpg"        # update destination (user)
+
