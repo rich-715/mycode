@@ -1,0 +1,7 @@
+- name: DellEMC PowerEdge - Making contact with DellEMC PowerEdge
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  roles:
+    - challenge

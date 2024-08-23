@@ -1,0 +1,45 @@
+---
+- name: Full audit of iDRAC interface
+  hosts: localhost   
+  connection: local 
+  gather_facts: False 
+
+  vars:
+    my_ip: "10.0.0.89"
+    my_user: 'root'
+    my_password: r0gerwilc0
+  
+  tasks:
+
+  - name: PRECHECKING - Check Health of iDRAC
+    block:
+      - name: Show status of the Lifecycle Controller
+        dellemc.openmanage.idrac_lifecycle_controller_status_info:
+          idrac_ip: "{{ my_ip }}"
+          idrac_user: "{{ my_user }}"
+          idrac_password: "{{ my_password }}"
+          validate_certs: False
+        register: results
+
+      - assert:
+          that: results.lc_status_info.LCReady == true
+          success_msg: iDRAC is healthy
+          fail_msg: iDRAC is unhealthy
+
+    rescue:
+      - name: Check if /tmp.export_ls exist
+        file:
+          path: "/tmp/export_;s"
+          state: directory
+
+      - name: Collect Logs when iDRAC is unhealthy
+        dellemc.openmanage.idrac_lifecycle_controller_logs:
+          idrac_ip: "{{ my_ip }}"
+          idrac_user: "{{ my_user }}"
+          idrac_password: "{{ my_password }}"
+          validate_certs: False
+          share_name: "/tmp/export_lc"
+
+      - name: Fail playbook
+        fail:
+          msg: "Playbook failed idrac error"
