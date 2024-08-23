@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "96f323c9-af2b-49ce-8f27-99c01128db42", "counter": 5, "stdout": "\u001b[1;35m[WARNING]: Platform linux on host idrac-host1 is using the discovered Python\u001b[0m", "start_line": 4, "end_line": 5, "runner_ident": "df4e3ef1-0d75-40c5-9962-b6fb46d9ed6d", "created": "2024-08-23T16:01:47.091243+00:00"}
